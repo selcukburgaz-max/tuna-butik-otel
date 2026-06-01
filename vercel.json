@@ -2,30 +2,51 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/en",              "destination": "/en/index.html" },
-    { "source": "/en/",             "destination": "/en/index.html" },
-    { "source": "/odalarimiz",      "destination": "/odalarimiz.html" },
-    { "source": "/odalarimiz/",     "destination": "/odalarimiz.html" },
-    { "source": "/galeri",          "destination": "/galeri.html" },
-    { "source": "/galeri/",         "destination": "/galeri.html" },
-    { "source": "/bodrum-rehberi",  "destination": "/bodrum-rehberi.html" },
-    { "source": "/bodrum-rehberi/", "destination": "/bodrum-rehberi.html" },
-    { "source": "/hakkimizda",      "destination": "/hakkimizda.html" },
-    { "source": "/hakkimizda/",     "destination": "/hakkimizda.html" },
-    { "source": "/hizmetler",       "destination": "/hizmetler.html" },
-    { "source": "/hizmetler/",      "destination": "/hizmetler.html" },
-    { "source": "/iletisim",        "destination": "/iletisim.html" },
-    { "source": "/iletisim/",       "destination": "/iletisim.html" },
-    { "source": "/rezervasyon",     "destination": "/rezervasyon.html" },
-    { "source": "/rezervasyon/",    "destination": "/rezervasyon.html" }
+    { "source": "/en",                  "destination": "/en/index.html" },
+    { "source": "/en/",                 "destination": "/en/index.html" },
+    { "source": "/en/rooms",            "destination": "/en/index.html" },
+    { "source": "/en/rooms/",           "destination": "/en/index.html" },
+    { "source": "/en/amenities",        "destination": "/en/index.html" },
+    { "source": "/en/amenities/",       "destination": "/en/index.html" },
+    { "source": "/en/gallery",          "destination": "/en/index.html" },
+    { "source": "/en/gallery/",         "destination": "/en/index.html" },
+    { "source": "/en/about",            "destination": "/en/index.html" },
+    { "source": "/en/about/",           "destination": "/en/index.html" },
+    { "source": "/en/contact",          "destination": "/en/index.html" },
+    { "source": "/en/contact/",         "destination": "/en/index.html" },
+    { "source": "/en/bodrum-guide",     "destination": "/en/index.html" },
+    { "source": "/en/bodrum-guide/",    "destination": "/en/index.html" },
+    { "source": "/en/reservation",      "destination": "/en/index.html" },
+    { "source": "/en/reservation/",     "destination": "/en/index.html" },
+    { "source": "/odalarimiz",          "destination": "/odalarimiz.html" },
+    { "source": "/odalarimiz/",         "destination": "/odalarimiz.html" },
+    { "source": "/galeri",              "destination": "/galeri.html" },
+    { "source": "/galeri/",             "destination": "/galeri.html" },
+    { "source": "/bodrum-rehberi",      "destination": "/bodrum-rehberi.html" },
+    { "source": "/bodrum-rehberi/",     "destination": "/bodrum-rehberi.html" },
+    { "source": "/hakkimizda",          "destination": "/hakkimizda.html" },
+    { "source": "/hakkimizda/",         "destination": "/hakkimizda.html" },
+    { "source": "/hizmetler",           "destination": "/hizmetler.html" },
+    { "source": "/hizmetler/",          "destination": "/hizmetler.html" },
+    { "source": "/iletisim",            "destination": "/iletisim.html" },
+    { "source": "/iletisim/",           "destination": "/iletisim.html" },
+    { "source": "/rezervasyon",         "destination": "/rezervasyon.html" },
+    { "source": "/rezervasyon/",        "destination": "/rezervasyon.html" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options",        "value": "DENY" },
-        { "key": "X-XSS-Protection",       "value": "1; mode=block" }
+        { "key": "X-Frame-Options",        "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection",       "value": "1; mode=block" },
+        { "key": "Referrer-Policy",        "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
