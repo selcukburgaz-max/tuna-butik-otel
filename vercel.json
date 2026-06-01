@@ -1,0 +1,40 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/en",              "destination": "/en/index.html" },
+    { "source": "/en/",             "destination": "/en/index.html" },
+    { "source": "/odalarimiz",      "destination": "/odalarimiz.html" },
+    { "source": "/odalarimiz/",     "destination": "/odalarimiz.html" },
+    { "source": "/galeri",          "destination": "/galeri.html" },
+    { "source": "/galeri/",         "destination": "/galeri.html" },
+    { "source": "/bodrum-rehberi",  "destination": "/bodrum-rehberi.html" },
+    { "source": "/bodrum-rehberi/", "destination": "/bodrum-rehberi.html" },
+    { "source": "/hakkimizda",      "destination": "/hakkimizda.html" },
+    { "source": "/hakkimizda/",     "destination": "/hakkimizda.html" },
+    { "source": "/hizmetler",       "destination": "/hizmetler.html" },
+    { "source": "/hizmetler/",      "destination": "/hizmetler.html" },
+    { "source": "/iletisim",        "destination": "/iletisim.html" },
+    { "source": "/iletisim/",       "destination": "/iletisim.html" },
+    { "source": "/rezervasyon",     "destination": "/rezervasyon.html" },
+    { "source": "/rezervasyon/",    "destination": "/rezervasyon.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options",        "value": "DENY" },
+        { "key": "X-XSS-Protection",       "value": "1; mode=block" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}

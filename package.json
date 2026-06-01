@@ -1,0 +1,11 @@
+{
+  "name": "tuna-butik-otel",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "resend": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

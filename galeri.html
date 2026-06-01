@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO ═══ -->
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<title>Galeri | Tuna Butik Otel Bodrum — Oda ve Otel Fotoğrafları</title>
+<meta name="description" content="Tuna Butik Otel Bodrum galeri. Oda fotoğrafları, açık büfe kahvaltı görselleri, ortak alanlar ve otel dış cephe. Rezervasyon öncesi otelimizi keşfedin.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<meta name="theme-color" content="#0B4F7A">
+<link rel="canonical" href="https://tunaotel.com/galeri/">
+<link rel="alternate" hreflang="tr" href="https://tunaotel.com/galeri/">
+<link rel="alternate" hreflang="en" href="https://tunaotel.com/en/gallery/">
+<link rel="alternate" hreflang="x-default" href="https://tunaotel.com/galeri/">
+<meta property="og:title" content="Galeri | Tuna Butik Otel Bodrum">
+<meta property="og:description" content="Bodrum'un kalbindeki butik otelimizin oda, kahvaltı ve ortak alan fotoğraflarını inceleyin.">
+<meta property="og:url" content="https://tunaotel.com/galeri/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tunaotel.com/images/og-galeri.jpg">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"ImageGallery",
+      "@id":"https://tunaotel.com/galeri/",
+      "name":"Tuna Butik Otel Bodrum — Fotoğraf Galerisi",
+      "description":"Tuna Butik Otel'in oda, kahvaltı, ortak alan ve dış mekan fotoğrafları.",
+      "url":"https://tunaotel.com/galeri/",
+      "isPartOf":{"@id":"https://tunaotel.com/#hotel"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Anasayfa","item":"https://tunaotel.com/"},
+        {"@type":"ListItem","position":2,"name":"Galeri","item":"https://tunaotel.com/galeri/"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+<style>
+/* ═══ TOKENS ═══ */
+:root{
+  --aegean:#0B4F7A; --aegean-mid:#1470A8; --aegean-lt:#1A8AC4;
+  --turquoise:#1DBFA8; --turq-lt:#5ED9C8;
+  --sand:#F5EFE6; --sand-dark:#E8DECE; --cream:#FDFAF6;
+  --white:#FFFFFF; --ink:#0D2233; --ink-mid:#2A4A62; --ink-lt:#5A7A92;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'DM Sans',system-ui,sans-serif;
+  --max:1180px; --nav-h:72px;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+  --gap:10px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--ink);background:var(--cream);overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+button{cursor:pointer;border:none;background:none;font-family:var(--font-body);}
+img{display:block;max-width:100%;}
+
+/* ═══ NAV ═══ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;padding:0 40px;background:rgba(11,79,122,0.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.08);}
+.nav-inner{width:100%;max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;flex-direction:column;line-height:1;color:white;}
+.nav-logo-main{font-family:var(--font-display);font-size:22px;font-weight:600;letter-spacing:0.02em;}
+.nav-logo-sub{font-size:9px;letter-spacing:0.22em;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:2px;}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.82);font-size:12px;letter-spacing:0.08em;position:relative;padding-bottom:2px;transition:color 0.2s;}
+.nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;background:var(--turquoise);transform:scaleX(0);transform-origin:left;transition:transform 0.3s var(--ease);}
+.nav-links a:hover,.nav-links a.active{color:white;}
+.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1);}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,0.1);border-radius:20px;padding:3px;}
+.lang-btn{font-size:11px;font-weight:500;color:rgba(255,255,255,0.6);padding:4px 10px;border-radius:16px;transition:all 0.2s;}
+.lang-btn.active{background:var(--turquoise);color:white;}
+.nav-reserve{background:var(--turquoise);color:white;font-size:12px;font-weight:500;letter-spacing:0.08em;padding:10px 20px;border-radius:6px;transition:background 0.2s,transform 0.15s;}
+.nav-reserve:hover{background:var(--turq-lt);transform:translateY(-1px);}
+.nav-burger{display:none;flex-direction:column;gap:5px;padding:8px;-webkit-tap-highlight-color:transparent;}
+.nav-burger span{width:22px;height:1.5px;background:white;border-radius:2px;transition:0.3s;}
+
+/* Mobile menu */
+.mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:rgba(7,28,46,0.98);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:var(--font-display);font-size:32px;font-weight:300;color:rgba(255,255,255,0.85);padding:10px 20px;letter-spacing:0.02em;transition:color 0.2s;-webkit-tap-highlight-color:transparent;}
+.mobile-menu a:hover{color:var(--turquoise);}
+.mobile-menu-reserve{margin-top:16px;background:var(--turquoise)!important;color:white!important;font-size:16px!important;border-radius:8px!important;padding:12px 32px!important;font-family:var(--font-body)!important;font-size:14px!important;letter-spacing:0.08em!important;}
+.mobile-close{position:absolute;top:20px;right:20px;color:rgba(255,255,255,0.4);width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,0.12);font-size:18px;transition:all 0.2s;}
+.mobile-close:hover{color:white;border-color:rgba(255,255,255,0.4);}
+
+/* ═══ BREADCRUMB ═══ */
+.breadcrumb{background:var(--sand);padding:calc(var(--nav-h) + 12px) 40px 12px;}
+.breadcrumb-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:8px;}
+.breadcrumb a,.breadcrumb span{font-size:12px;color:var(--ink-lt);}
+.breadcrumb a:hover{color:var(--turquoise);}
+.breadcrumb .sep{color:var(--sand-dark);}
+.breadcrumb .current{color:var(--ink);font-weight:500;}
+
+/* ═══ PAGE HERO ═══ */
+.page-hero{background:linear-gradient(135deg,var(--aegean) 0%,#0D6B5E 100%);padding:52px 40px 60px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 50%,rgba(29,191,168,0.15) 0%,transparent 60%);}
+.page-hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;}
+.page-hero-text{}
+.page-hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0.2em;font-weight:500;color:var(--turq-lt);text-transform:uppercase;margin-bottom:10px;}
+.page-hero-tag::before{content:'';width:20px;height:1px;background:var(--turquoise);}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(32px,5vw,60px);font-weight:300;color:white;line-height:1.1;letter-spacing:-0.01em;}
+.page-hero h1 em{font-style:italic;color:var(--turq-lt);}
+.page-hero-sub{font-size:14px;color:rgba(255,255,255,0.65);margin-top:10px;max-width:480px;line-height:1.6;}
+.photo-count-badge{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(8px);color:white;padding:10px 20px;border-radius:8px;text-align:center;flex-shrink:0;}
+.photo-count-num{font-family:var(--font-display);font-size:36px;font-weight:300;color:var(--turq-lt);line-height:1;}
+.photo-count-lbl{font-size:10px;letter-spacing:0.12em;color:rgba(255,255,255,0.6);margin-top:2px;}
+
+/* ═══ FILTER TABS ═══ */
+.filter-bar{background:white;border-bottom:1px solid var(--sand-dark);position:sticky;top:var(--nav-h);z-index:50;}
+.filter-bar-inner{max-width:var(--max);margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;}
+.filter-bar-inner::-webkit-scrollbar{display:none;}
+.filter-tab{flex-shrink:0;display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;letter-spacing:0.05em;color:var(--ink-lt);padding:16px 18px;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;-webkit-tap-highlight-color:transparent;}
+.filter-tab:hover{color:var(--aegean);}
+.filter-tab.active{color:var(--aegean);border-bottom-color:var(--turquoise);}
+.tab-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.tab-count{font-size:10px;color:var(--ink-lt);background:var(--sand);padding:1px 7px;border-radius:10px;}
+.filter-tab.active .tab-count{background:rgba(29,191,168,0.15);color:var(--turquoise);}
+
+/* ═══ GALLERY GRID ═══ */
+.gallery-section{padding:32px 40px 80px;background:var(--cream);}
+.gallery-inner{max-width:var(--max);margin:0 auto;}
+
+/* Masonry-style CSS grid */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:220px;
+  gap:var(--gap);
+}
+
+.g-item{
+  position:relative;overflow:hidden;border-radius:8px;
+  background:var(--sand-dark);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.g-item:focus{outline:2px solid var(--turquoise);outline-offset:2px;}
+
+/* Size variants */
+.g-wide{grid-column:span 2;}
+.g-tall{grid-row:span 2;}
+.g-big{grid-column:span 2;grid-row:span 2;}
+
+/* Gradient placeholder */
+.g-ph{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  transition:transform 0.5s var(--ease);
+}
+.g-ph-icon{font-size:clamp(24px,4vw,48px);opacity:0.65;}
+.g-ph-lbl{font-family:var(--font-display);font-size:clamp(12px,2vw,18px);font-style:italic;color:rgba(255,255,255,0.5);}
+
+.g1{background:linear-gradient(145deg,#0B4F7A,#1DBFA8);}
+.g2{background:linear-gradient(145deg,#0D6B5E,#1470A8);}
+.g3{background:linear-gradient(145deg,#0D2233,#0B4F7A);}
+.g4{background:linear-gradient(145deg,#1470A8,#0D6B5E);}
+.g5{background:linear-gradient(145deg,#063040,#1A8AC4);}
+.g6{background:linear-gradient(145deg,#0A4060,#1DBFA8);}
+.g7{background:linear-gradient(145deg,#0B4F7A,#C8953A);}
+.g8{background:linear-gradient(145deg,#0D2233,#1470A8);}
+
+/* Real image support */
+.g-item img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;transition:transform 0.5s var(--ease),opacity 0.3s;
+}
+.g-item:hover img,.g-item:hover .g-ph{transform:scale(1.05);}
+
+/* Overlay on hover */
+.g-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(11,30,50,0.7) 0%,transparent 50%);
+  opacity:0;transition:opacity 0.3s;
+  display:flex;align-items:flex-end;padding:16px;
+}
+.g-item:hover .g-overlay,.g-item:focus .g-overlay{opacity:1;}
+.g-caption{font-size:12px;color:white;letter-spacing:0.04em;line-height:1.4;}
+.g-caption-cat{font-size:10px;color:var(--turq-lt);letter-spacing:0.1em;display:block;margin-bottom:2px;}
+
+/* Zoom icon */
+.g-zoom{
+  position:absolute;top:12px;right:12px;
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);
+  border:1px solid rgba(255,255,255,0.2);
+  display:flex;align-items:center;justify-content:center;
+  color:white;opacity:0;transition:opacity 0.3s,transform 0.2s;
+  transform:scale(0.8);
+}
+.g-item:hover .g-zoom,.g-item:focus .g-zoom{opacity:1;transform:scale(1);}
+
+/* Category badge */
+.g-cat{
+  position:absolute;top:12px;left:12px;
+  background:rgba(11,50,80,0.6);backdrop-filter:blur(4px);
+  border:1px solid rgba(255,255,255,0.15);
+  color:rgba(255,255,255,0.85);
+  font-size:9px;letter-spacing:0.1em;padding:3px 9px;border-radius:20px;
+}
+
+/* Empty state */
+.gallery-empty{display:none;text-align:center;padding:60px 20px;color:var(--ink-lt);}
+.gallery-empty svg{margin:0 auto 12px;opacity:0.3;}
+.gallery-empty p{font-size:14px;}
+
+/* ═══ LIGHTBOX ═══ */
+.lightbox{
+  position:fixed;inset:0;z-index:1000;
+  background:rgba(7,20,35,0.96);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity 0.3s var(--ease);
+  touch-action:pinch-zoom;
+}
+.lightbox.open{opacity:1;pointer-events:all;}
+.lb-inner{
+  position:relative;
+  width:100%;height:100%;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:60px 80px;
+}
+.lb-img-wrap{
+  position:relative;
+  max-width:100%;max-height:100%;
+  flex:1;display:flex;align-items:center;justify-content:center;
+}
+.lb-img-wrap img,.lb-img-placeholder{
+  max-width:100%;max-height:calc(100vh - 160px);
+  object-fit:contain;border-radius:6px;
+  animation:lb-pop 0.3s var(--ease) both;
+}
+.lb-img-placeholder{
+  width:min(600px,90vw);aspect-ratio:4/3;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  border-radius:10px;
+}
+@keyframes lb-pop{from{transform:scale(0.94);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* Lightbox controls */
+.lb-close{
+  position:absolute;top:16px;right:16px;z-index:2;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);
+  color:white;font-size:18px;
+  display:flex;align-items:center;justify-content:center;
+  transition:background 0.2s,transform 0.15s;
+  -webkit-tap-highlight-color:transparent;
+}
+.lb-close:hover{background:rgba(255,255,255,0.2);transform:scale(1.05);}
+
+.lb-prev,.lb-next{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);
+  color:white;font-size:20px;
+  display:flex;align-items:center;justify-content:center;
+  transition:background 0.2s,transform 0.2s;
+  -webkit-tap-highlight-color:transparent;
+  z-index:2;
+}
+.lb-prev{left:16px;}
+.lb-next{right:16px;}
+.lb-prev:hover{background:rgba(255,255,255,0.2);transform:translateY(-50%) translateX(-2px);}
+.lb-next:hover{background:rgba(255,255,255,0.2);transform:translateY(-50%) translateX(2px);}
+
+/* Lightbox info */
+.lb-info{
+  margin-top:16px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+}
+.lb-caption{font-family:var(--font-display);font-size:18px;font-weight:300;color:white;font-style:italic;}
+.lb-meta{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:0.08em;}
+
+/* Lightbox dots */
+.lb-dots{
+  display:flex;gap:6px;margin-top:12px;
+  flex-wrap:wrap;justify-content:center;max-width:300px;
+}
+.lb-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:rgba(255,255,255,0.25);
+  transition:background 0.2s,transform 0.2s;
+  cursor:pointer;
+}
+.lb-dot.active{background:var(--turquoise);transform:scale(1.3);}
+
+/* ═══ STATS BAND ═══ */
+.stats-band{background:var(--aegean);padding:48px 40px;}
+.stats-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;}
+.stat-item{background:rgba(255,255,255,0.04);padding:28px 20px;text-align:center;}
+.stat-num{font-family:var(--font-display);font-size:clamp(28px,4vw,44px);font-weight:300;color:var(--turq-lt);line-height:1;}
+.stat-lbl{font-size:12px;color:rgba(255,255,255,0.55);letter-spacing:0.08em;margin-top:6px;}
+
+/* ═══ CTA ═══ */
+.gallery-cta{background:white;padding:80px 40px;text-align:center;}
+.gallery-cta-inner{max-width:560px;margin:0 auto;}
+.gallery-cta h2{font-family:var(--font-display);font-size:clamp(28px,4vw,44px);font-weight:300;color:var(--ink);margin-bottom:12px;line-height:1.2;}
+.gallery-cta h2 em{font-style:italic;color:var(--aegean);}
+.gallery-cta p{font-size:15px;color:var(--ink-lt);margin-bottom:32px;line-height:1.7;}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--aegean);color:white;font-size:13px;font-weight:500;letter-spacing:0.08em;padding:14px 28px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.15s;}
+.btn-primary:hover{background:var(--aegean-lt);transform:translateY(-1px);}
+.btn-wa{background:transparent;border:1.5px solid var(--aegean);color:var(--aegean);font-size:13px;letter-spacing:0.06em;padding:13px 22px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;}
+.btn-wa:hover{background:var(--aegean);color:white;}
+
+/* ═══ FOOTER MINI ═══ */
+.footer-mini{background:var(--ink);color:rgba(255,255,255,0.5);padding:28px 40px;}
+.footer-mini-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-mini-logo{font-family:var(--font-display);font-size:20px;color:white;font-weight:300;}
+.footer-mini-links{display:flex;gap:20px;}
+.footer-mini-links a{font-size:13px;color:rgba(255,255,255,0.5);transition:color 0.2s;}
+.footer-mini-links a:hover{color:var(--turquoise);}
+.footer-mini-copy{font-size:12px;}
+
+/* WhatsApp */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:200;background:#25D366;color:white;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform 0.2s var(--ease);-webkit-tap-highlight-color:transparent;}
+.wa-float:hover,.wa-float:active{transform:scale(1.1);}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.6s var(--ease),transform 0.6s var(--ease);}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ═══════════════════════════════
+   RESPONSIVE — TABLET (≤900px)
+═══════════════════════════════ */
+@media (max-width:900px){
+  .nav{padding:0 20px;}
+  .nav-links,.lang-toggle{display:none;}
+  .nav-burger{display:flex;}
+  .page-hero{padding:44px 24px 52px;}
+  .photo-count-badge{display:none;}
+  .gallery-section{padding:24px 16px 64px;}
+  .gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:160px;
+  }
+  .filter-bar-inner{padding:0 16px;}
+  .breadcrumb{padding-left:20px;padding-right:20px;}
+  .stats-inner{grid-template-columns:repeat(2,1fr);}
+  .stats-band{padding:40px 24px;}
+  .gallery-cta{padding:60px 24px;}
+  .footer-mini{padding:24px 20px;}
+  .footer-mini-links{display:none;}
+  .lb-prev{left:8px;}
+  .lb-next{right:8px;}
+  .lb-inner{padding:56px 56px 24px;}
+}
+
+/* ═══════════════════════════════
+   RESPONSIVE — MOBILE (≤600px)
+═══════════════════════════════ */
+@media (max-width:600px){
+  :root{--nav-h:60px;--gap:8px;}
+
+  /* Nav */
+  .nav{height:var(--nav-h);padding:0 16px;}
+  .nav-logo-main{font-size:18px;}
+  .nav-logo-sub{display:none;}
+  .nav-reserve{font-size:11px;padding:8px 12px;}
+
+  /* Breadcrumb */
+  .breadcrumb{padding:calc(var(--nav-h) + 10px) 16px 10px;}
+
+  /* Page hero */
+  .page-hero{padding:36px 16px 44px;}
+  .page-hero h1{font-size:clamp(28px,8vw,38px);}
+  .page-hero-sub{font-size:13px;}
+  .page-hero-tag{font-size:10px;}
+
+  /* Filter bar */
+  .filter-bar-inner{padding:0 12px;gap:0;}
+  .filter-tab{font-size:11px;padding:14px 12px;gap:5px;}
+  .tab-count{display:none;}
+
+  /* Gallery grid — 2 sütun, kare */
+  .gallery-section{padding:16px 12px 56px;}
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:140px;
+    gap:8px;
+  }
+  /* Mobilde büyük kartları düzelt */
+  .g-big{grid-column:span 2;grid-row:span 1;}
+  .g-tall{grid-row:span 2;}
+  .g-wide{grid-column:span 2;}
+  .g-ph-icon{font-size:32px;}
+  .g-ph-lbl{display:none;}
+
+  /* Lightbox — tam ekran mobil */
+  .lb-inner{padding:56px 12px 16px;}
+  .lb-img-wrap{width:100%;}
+  .lb-img-wrap img,.lb-img-placeholder{max-height:55vh;width:100%;border-radius:8px;}
+  .lb-caption{font-size:16px;}
+  .lb-prev,.lb-next{
+    width:40px;height:40px;font-size:16px;
+    background:rgba(255,255,255,0.15);
+  }
+  .lb-prev{left:6px;}
+  .lb-next{right:6px;}
+  .lb-dots{margin-top:8px;}
+
+  /* Stats */
+  .stats-inner{grid-template-columns:1fr 1fr;}
+  .stat-item{padding:20px 12px;}
+  .stats-band{padding:32px 16px;}
+
+  /* CTA */
+  .gallery-cta{padding:48px 16px;}
+  .cta-btns{flex-direction:column;align-items:center;}
+  .btn-primary,.btn-wa{width:100%;max-width:280px;justify-content:center;}
+
+  /* Footer */
+  .footer-mini{padding:20px 16px;}
+  .footer-mini-copy{font-size:11px;}
+
+  /* WhatsApp */
+  .wa-float{bottom:16px;right:14px;width:50px;height:50px;}
+
+  /* Mobile menu */
+  .mobile-menu a{font-size:28px;}
+  .mobile-close{top:14px;right:14px;}
+}
+
+/* ═══ TINY (≤380px) ═══ */
+@media(max-width:380px){
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:120px;
+  }
+  .g-big{grid-column:span 2;grid-row:span 1;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Menüyü kapat">✕</button>
+  <a href="/" onclick="closeMobileMenu()">Anasayfa</a>
+  <a href="/odalarimiz/" onclick="closeMobileMenu()">Odalarımız</a>
+  <a href="/galeri/" onclick="closeMobileMenu()">Galeri</a>
+  <a href="/#konum" onclick="closeMobileMenu()">Konum</a>
+  <a href="/#iletisim" onclick="closeMobileMenu()">İletişim</a>
+  <a href="/#rezervasyon" class="mobile-menu-reserve" onclick="closeMobileMenu()">Rezervasyon Yap</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Ana navigasyon">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Tuna Butik Otel anasayfa">
+      <span class="nav-logo-main">Tuna</span>
+      <span class="nav-logo-sub">Butik Otel · Bodrum</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Anasayfa</a></li>
+      <li><a href="/odalarimiz/">Odalarımız</a></li>
+      <li><a href="/galeri/" class="active">Galeri</a></li>
+      <li><a href="/#kahvalti">Kahvaltı</a></li>
+      <li><a href="/#konum">Konum</a></li>
+      <li><a href="/#iletisim">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active">TR</button>
+        <button class="lang-btn" onclick="window.location.href='/en/'">EN</button>
+      </div>
+      <a href="/#rezervasyon" class="nav-reserve">Rezervasyon</a>
+    </div>
+    <button class="nav-burger" onclick="openMobileMenu()" aria-label="Menüyü aç" aria-expanded="false" id="burgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Anasayfa</a>
+    <span class="sep">›</span>
+    <span class="current" aria-current="page">Galeri</span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="page-hero-tag">Fotoğraf Galerisi</div>
+      <h1>Tuna Butik Otel'i<br><em>gözlerinizle keşfedin</em></h1>
+      <p class="page-hero-sub">Odalarımızı, açık büfe kahvaltımızı ve Bodrum'un kalbindeki otelimizi fotoğraflarla tanıyın.</p>
+    </div>
+    <div class="photo-count-badge" aria-label="Toplam fotoğraf sayısı">
+      <div class="photo-count-num" id="totalCount">28</div>
+      <div class="photo-count-lbl">FOTOĞRAF</div>
+    </div>
+  </div>
+</header>
+
+<!-- FILTER TABS -->
+<div class="filter-bar" role="navigation" aria-label="Galeri filtresi">
+  <div class="filter-bar-inner">
+    <button class="filter-tab active" data-filter="all" onclick="filterGallery(this,'all')">
+      <span class="tab-dot" style="background:var(--turquoise)"></span>
+      Tümü
+      <span class="tab-count" id="count-all">28</span>
+    </button>
+    <button class="filter-tab" data-filter="odalar" onclick="filterGallery(this,'odalar')">
+      <span class="tab-dot" style="background:#1470A8"></span>
+      Odalar
+      <span class="tab-count" id="count-odalar">12</span>
+    </button>
+    <button class="filter-tab" data-filter="kahvalti" onclick="filterGallery(this,'kahvalti')">
+      <span class="tab-dot" style="background:#C8953A"></span>
+      Kahvaltı
+      <span class="tab-count" id="count-kahvalti">6</span>
+    </button>
+    <button class="filter-tab" data-filter="ortak" onclick="filterGallery(this,'ortak')">
+      <span class="tab-dot" style="background:#0D6B5E"></span>
+      Ortak Alanlar
+      <span class="tab-count" id="count-ortak">6</span>
+    </button>
+    <button class="filter-tab" data-filter="dis" onclick="filterGallery(this,'dis')">
+      <span class="tab-dot" style="background:#0D2233"></span>
+      Dış Mekan
+      <span class="tab-count" id="count-dis">4</span>
+    </button>
+  </div>
+</div>
+
+<!-- GALLERY GRID -->
+<section class="gallery-section" aria-label="Fotoğraf galerisi">
+  <div class="gallery-inner">
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- ── ODALAR ── -->
+      <div class="g-item g-big reveal" data-cat="odalar" data-index="0" data-caption="Double Oda" tabindex="0" role="button" aria-label="Double Oda fotoğrafını büyüt">
+        <div class="g-ph g1" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2022/06/Edit-043-1024x683.jpg" alt="Double Oda — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🛏</div><div class="g-ph-lbl">Double Oda</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Double Oda — Çift kişilik</div></div>
+      </div>
+
+      <div class="g-item g-tall reveal" data-cat="odalar" data-index="1" data-caption="Double Oda — Detay" tabindex="0" role="button" aria-label="Double Oda detay fotoğrafını büyüt" style="transition-delay:0.05s">
+        <div class="g-ph g2" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-064-1024x683.jpg" alt="Oda Detay — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🪟</div><div class="g-ph-lbl">Oda Detay</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Oda penceresi</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="odalar" data-index="2" data-caption="Özel Banyo" tabindex="0" role="button" aria-label="Özel Banyo fotoğrafını büyüt" style="transition-delay:0.1s">
+        <div class="g-ph g3" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-076-1024x683.jpg" alt="Banyo — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🚿</div><div class="g-ph-lbl">Banyo</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Özel banyo</div></div>
+      </div>
+
+      <!-- ── KAHVALTI ── -->
+      <div class="g-item g-wide reveal" data-cat="kahvalti" data-index="3" data-caption="Açık Büfe Kahvaltı" tabindex="0" role="button" aria-label="Kahvaltı fotoğrafını büyüt" style="transition-delay:0.05s">
+        <div class="g-ph g7" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Kahvaltı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🍳</div><div class="g-ph-lbl">Kahvaltı</div></div>
+        <span class="g-cat">Kahvaltı</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Kahvaltı</span>Açık büfe kahvaltı</div></div>
+      </div>
+
+      <!-- ── TWIN ODA ── -->
+      <div class="g-item reveal" data-cat="odalar" data-index="4" data-caption="Twin Oda" tabindex="0" role="button" style="transition-delay:0.1s">
+        <div class="g-ph g4" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-056-1024x683.jpg" alt="Twin Oda — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🛌</div><div class="g-ph-lbl">Twin Oda</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Twin Oda</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="ortak" data-index="5" data-caption="Resepsiyon" tabindex="0" role="button" style="transition-delay:0.15s">
+        <div class="g-ph g5" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Tuna Butik Otel Dış" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🏨</div><div class="g-ph-lbl">Resepsiyon</div></div>
+        <span class="g-cat">Ortak Alan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Ortak Alanlar</span>Resepsiyon</div></div>
+      </div>
+
+      <div class="g-item g-wide reveal" data-cat="ortak" data-index="6" data-caption="Restoran Alanı" tabindex="0" role="button" style="transition-delay:0.05s">
+        <div class="g-ph g6" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-161-683x1024.jpg" alt="Restoran Alanı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🍽</div><div class="g-ph-lbl">Restoran</div></div>
+        <span class="g-cat">Ortak Alan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Ortak Alanlar</span>Restoran ve kahvaltı alanı</div></div>
+      </div>
+
+      <!-- ── KAHVALTI DETAY ── -->
+      <div class="g-item reveal" data-cat="kahvalti" data-index="7" data-caption="Taze Ürünler" tabindex="0" role="button" style="transition-delay:0.1s">
+        <div class="g-ph g7" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Kahvaltı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🫒</div><div class="g-ph-lbl">Zeytin</div></div>
+        <span class="g-cat">Kahvaltı</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Kahvaltı</span>Yerel zeytinler</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="kahvalti" data-index="8" data-caption="Kahvaltı Tabağı" tabindex="0" role="button" style="transition-delay:0.15s">
+        <div class="g-ph g7" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Kahvaltı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🧀</div><div class="g-ph-lbl">Peynir</div></div>
+        <span class="g-cat">Kahvaltı</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Kahvaltı</span>Yöresel peynir tabağı</div></div>
+      </div>
+
+      <!-- ── TRIPLE ODA ── -->
+      <div class="g-item g-tall reveal" data-cat="odalar" data-index="9" data-caption="Triple Oda" tabindex="0" role="button" style="transition-delay:0.05s">
+        <div class="g-ph g8" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2022/06/Edit-043-1024x683.jpg" alt="Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">⚓</div><div class="g-ph-lbl">Triple Oda</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Triple Oda</div></div>
+      </div>
+
+      <!-- ── DIŞ MEKAN ── -->
+      <div class="g-item g-wide reveal" data-cat="dis" data-index="10" data-caption="Otel Girişi" tabindex="0" role="button">
+        <div class="g-ph g5" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Tuna Butik Otel Dış" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🏨</div><div class="g-ph-lbl">Otel Girişi</div></div>
+        <span class="g-cat">Dış Mekan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Dış Mekan</span>Otel girişi</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="dis" data-index="11" data-caption="Bodrum Sokakları" tabindex="0" role="button" style="transition-delay:0.05s">
+        <div class="g-ph g3" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-076-1024x683.jpg" alt="Banyo — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🏰</div><div class="g-ph-lbl">Bodrum</div></div>
+        <span class="g-cat">Dış Mekan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Dış Mekan</span>Bodrum Kalesi manzarası</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="ortak" data-index="12" data-caption="Lobi" tabindex="0" role="button" style="transition-delay:0.1s">
+        <div class="g-ph g4" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-056-1024x683.jpg" alt="Twin Oda — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🛋</div><div class="g-ph-lbl">Lobi</div></div>
+        <span class="g-cat">Ortak Alan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Ortak Alanlar</span>Lobi bekleme alanı</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="kahvalti" data-index="13" data-caption="Kahve Servisi" tabindex="0" role="button" style="transition-delay:0.05s">
+        <div class="g-ph g7" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Kahvaltı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">☕</div><div class="g-ph-lbl">Kahve</div></div>
+        <span class="g-cat">Kahvaltı</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Kahvaltı</span>Türk kahvesi servisi</div></div>
+      </div>
+
+      <div class="g-item g-wide reveal" data-cat="odalar" data-index="14" data-caption="Oda Genel Görünüm" tabindex="0" role="button">
+        <div class="g-ph g2" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-064-1024x683.jpg" alt="Oda Detay — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🌅</div><div class="g-ph-lbl">Oda Manzara</div></div>
+        <span class="g-cat">Odalar</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Odalar</span>Oda ve pencere manzarası</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="dis" data-index="15" data-caption="Otel Cephe" tabindex="0" role="button" style="transition-delay:0.05s">
+        <div class="g-ph g6" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-161-683x1024.jpg" alt="Restoran Alanı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🌿</div><div class="g-ph-lbl">Dış Cephe</div></div>
+        <span class="g-cat">Dış Mekan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Dış Mekan</span>Otel dış cephesi</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="ortak" data-index="16" data-caption="Koridor" tabindex="0" role="button" style="transition-delay:0.1s">
+        <div class="g-ph g8" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2022/06/Edit-043-1024x683.jpg" alt="Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🚪</div><div class="g-ph-lbl">Koridor</div></div>
+        <span class="g-cat">Ortak Alan</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Ortak Alanlar</span>Kat koridoru</div></div>
+      </div>
+
+      <div class="g-item reveal" data-cat="kahvalti" data-index="17" data-caption="Börek ve Gözlemeler" tabindex="0" role="button">
+        <div class="g-ph g7" style="position:relative;padding:0"><img src="https://tunaotel.com/wp-content/uploads/2025/07/Edit-178-683x1024.jpg" alt="Kahvaltı — Tuna Butik Otel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="g-ph-icon">🥐</div><div class="g-ph-lbl">Börek</div></div>
+        <span class="g-cat">Kahvaltı</span>
+        <div class="g-zoom"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <div class="g-overlay"><div class="g-caption"><span class="g-caption-cat">Kahvaltı</span>Günlük börek</div></div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+
+    <div class="gallery-empty" id="galleryEmpty">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <p>Bu kategoride henüz fotoğraf bulunmuyor.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band reveal">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">18</div><div class="stat-lbl">KONFORLU ODA</div></div>
+    <div class="stat-item"><div class="stat-num">4.8★</div><div class="stat-lbl">GOOGLE PUAN</div></div>
+    <div class="stat-item"><div class="stat-num">1 km</div><div class="stat-lbl">KALEYE MESAFE</div></div>
+    <div class="stat-item"><div class="stat-num">120+</div><div class="stat-lbl">MİSAFİR YORUMU</div></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="gallery-cta reveal">
+  <div class="gallery-cta-inner">
+    <h2>Beğendiniz mi?<br><em>Hemen rezervasyon yapın</em></h2>
+    <p>Fotoğraflarda gördüğünüz konforu bizzat yaşamak için tarihinizi seçin.</p>
+    <div class="cta-btns">
+      <a href="/#rezervasyon" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Rezervasyon Yap
+      </a>
+      <a href="/odalarimiz/" class="btn-wa">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Odaları İncele
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-mini">
+  <div class="footer-mini-inner">
+    <div class="footer-mini-logo">Tuna Butik Otel</div>
+    <div class="footer-mini-links">
+      <a href="/">Anasayfa</a>
+      <a href="/odalarimiz/">Odalar</a>
+      <a href="/galeri/">Galeri</a>
+      <a href="/#konum">Konum</a>
+      <a href="/#iletisim">İletişim</a>
+    </div>
+    <div class="footer-mini-copy">© 2025 Tuna Butik Otel · Bodrum</div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotoğraf görüntüleyici">
+  <div class="lb-inner">
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Kapat">✕</button>
+    <button class="lb-prev" onclick="lbPrev()" aria-label="Önceki fotoğraf">‹</button>
+    <button class="lb-next" onclick="lbNext()" aria-label="Sonraki fotoğraf">›</button>
+    <div class="lb-img-wrap" id="lbImgWrap">
+      <!-- dinamik -->
+    </div>
+    <div class="lb-info">
+      <div class="lb-caption" id="lbCaption"></div>
+      <div class="lb-meta" id="lbMeta"></div>
+      <div class="lb-dots" id="lbDots"></div>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://api.whatsapp.com/send?phone=905326042607&text=Merhaba, galeriyi inceledim, rezervasyon yapmak istiyorum." target="_blank" class="wa-float" aria-label="WhatsApp ile iletişim">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+/* ═══ REVEAL ═══ */
+const revEls = document.querySelectorAll('.reveal');
+const revObs = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');revObs.unobserve(x.target);}}),{threshold:0.08});
+revEls.forEach(el=>revObs.observe(el));
+
+/* ═══ MOBILE MENU ═══ */
+function openMobileMenu(){
+  document.getElementById('mobileMenu').classList.add('open');
+  document.body.style.overflow='hidden';
+  document.getElementById('burgerBtn').setAttribute('aria-expanded','true');
+}
+function closeMobileMenu(){
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow='';
+  document.getElementById('burgerBtn').setAttribute('aria-expanded','false');
+}
+
+/* ═══ GALLERY FILTER ═══ */
+let currentFilter = 'all';
+function filterGallery(btn, cat){
+  document.querySelectorAll('.filter-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter = cat;
+
+  const items = document.querySelectorAll('.g-item');
+  let visible = 0;
+  items.forEach(item=>{
+    const show = cat==='all' || item.dataset.cat===cat;
+    item.style.display = show ? '' : 'none';
+    if(show) visible++;
+  });
+
+  document.getElementById('galleryEmpty').style.display = visible===0 ? 'block' : 'none';
+  updateVisibleItems();
+}
+
+function updateVisibleItems(){
+  visibleItems = Array.from(document.querySelectorAll('.g-item'))
+    .filter(el => el.style.display !== 'none');
+}
+
+/* ═══ LIGHTBOX ═══ */
+let currentLbIndex = 0;
+let visibleItems = Array.from(document.querySelectorAll('.g-item'));
+
+// Gather all items data
+const allItems = Array.from(document.querySelectorAll('.g-item'));
+
+function openLightbox(el){
+  updateVisibleItems();
+  currentLbIndex = visibleItems.indexOf(el);
+  renderLightbox();
+  const lb = document.getElementById('lightbox');
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
+  lb.focus();
+}
+
+function renderLightbox(){
+  const item = visibleItems[currentLbIndex];
+  if(!item) return;
+
+  // Image or placeholder
+  const ph = item.querySelector('.g-ph');
+  const img = item.querySelector('img');
+  const wrap = document.getElementById('lbImgWrap');
+
+  if(img){
+    wrap.innerHTML = `<img src="${img.src}" alt="${item.dataset.caption||''}" loading="lazy">`;
+  } else if(ph){
+    const clone = ph.cloneNode(true);
+    clone.classList.add('lb-img-placeholder');
+    clone.style.cssText = ph.style.cssText;
+    wrap.innerHTML = '';
+    wrap.appendChild(clone);
+  }
+
+  document.getElementById('lbCaption').textContent = item.dataset.caption || '';
+  document.getElementById('lbMeta').textContent =
+    (currentLbIndex+1) + ' / ' + visibleItems.length;
+
+  // Dots
+  const dotsEl = document.getElementById('lbDots');
+  const max = Math.min(visibleItems.length, 12);
+  if(visibleItems.length > 1 && visibleItems.length <= 20){
+    dotsEl.innerHTML = Array.from({length:max},(_,i)=>
+      `<span class="lb-dot${i===currentLbIndex%max?' active':''}" onclick="lbGoTo(${i})"></span>`
+    ).join('');
+  } else { dotsEl.innerHTML=''; }
+}
+
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+function lbPrev(){
+  currentLbIndex = (currentLbIndex - 1 + visibleItems.length) % visibleItems.length;
+  renderLightbox();
+}
+function lbNext(){
+  currentLbIndex = (currentLbIndex + 1) % visibleItems.length;
+  renderLightbox();
+}
+function lbGoTo(i){
+  currentLbIndex = i;
+  renderLightbox();
+}
+
+// Click handlers on items
+allItems.forEach(item=>{
+  item.addEventListener('click', ()=>openLightbox(item));
+  item.addEventListener('keydown', e=>{
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLightbox(item); }
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', e=>{
+  const lb = document.getElementById('lightbox');
+  if(!lb.classList.contains('open')) return;
+  if(e.key==='Escape') closeLightbox();
+  if(e.key==='ArrowLeft') lbPrev();
+  if(e.key==='ArrowRight') lbNext();
+});
+
+// Touch swipe for lightbox
+let touchStartX = 0;
+document.getElementById('lightbox').addEventListener('touchstart', e=>{
+  touchStartX = e.changedTouches[0].clientX;
+}, {passive:true});
+document.getElementById('lightbox').addEventListener('touchend', e=>{
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if(Math.abs(dx) > 50){
+    dx < 0 ? lbNext() : lbPrev();
+  }
+}, {passive:true});
+
+// Close on backdrop click
+document.getElementById('lightbox').addEventListener('click', e=>{
+  if(e.target===document.getElementById('lightbox')) closeLightbox();
+});
+</script>
+</body>
+</html>
