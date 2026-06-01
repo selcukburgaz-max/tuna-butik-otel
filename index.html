@@ -1818,28 +1818,56 @@ footer {
             <div class="loc-dist">750 m</div>
             <div>
               <div class="loc-info-name">Bodrum Kalesi</div>
-              <div class="loc-info-desc">Tarihi St. Peter Kalesi'ne yürüyüş · Navigasyon için tıklayın</div>
+              <div class="loc-info-desc">Tarihi St. Peter Kalesi · 15 dk yürüyüş</div>
             </div>
           </a>
           <a href="https://maps.google.com/?q=Bodrum+Carsisi" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
             <div class="loc-dist">500 m</div>
             <div>
               <div class="loc-info-name">Bodrum Çarşısı</div>
-              <div class="loc-info-desc">Restoranlar, kafeler, alışveriş · Navigasyon için tıklayın</div>
+              <div class="loc-info-desc">Restoranlar, kafeler, alışveriş · 10 dk yürüyüş</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Bodrum+Plaji" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
+            <div class="loc-dist">800 m</div>
+            <div>
+              <div class="loc-info-name">Bodrum Plajı</div>
+              <div class="loc-info-desc">Şehir merkezi plajı · 15 dk yürüyüş</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Halikarnas+Mozolesi+Bodrum" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
+            <div class="loc-dist">1 km</div>
+            <div>
+              <div class="loc-info-name">Halikarnas Mozolesi</div>
+              <div class="loc-info-desc">Dünyanın 7 harikasından biri · 20 dk yürüyüş</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Antik+Tiyatro+Bodrum" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
+            <div class="loc-dist">1.2 km</div>
+            <div>
+              <div class="loc-info-name">Bodrum Antik Tiyatrosu</div>
+              <div class="loc-info-desc">M.Ö. 4. yüzyıldan kalma · 20 dk yürüyüş</div>
             </div>
           </a>
           <a href="https://maps.google.com/?q=Bodrum+Marina" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
             <div class="loc-dist">1.5 km</div>
             <div>
               <div class="loc-info-name">Bodrum Yat Limanı</div>
-              <div class="loc-info-desc">Bodrum'un ikonik marinası · Navigasyon için tıklayın</div>
+              <div class="loc-info-desc">İkonik marina, restoranlar · 25 dk yürüyüş</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Zeki+Muren+Muzesi+Bodrum" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
+            <div class="loc-dist">1.8 km</div>
+            <div>
+              <div class="loc-info-name">Zeki Müren Sanat Müzesi</div>
+              <div class="loc-info-desc">Efsanevi sanatçının evi · Araçla 5 dk</div>
             </div>
           </a>
           <a href="https://maps.google.com/?q=Milas+Bodrum+Havalimani" target="_blank" rel="noopener" class="loc-point" style="text-decoration:none">
             <div class="loc-dist">36 km</div>
             <div>
               <div class="loc-info-name">Milas-Bodrum Havalimanı</div>
-              <div class="loc-info-desc">Yaklaşık 40 dk ulaşım · Navigasyon için tıklayın</div>
+              <div class="loc-info-desc">Yaklaşık 40 dk · Araçla ulaşım</div>
             </div>
           </a>
         </div>
@@ -2057,7 +2085,15 @@ footer {
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 Tuna Butik Otel. Tüm hakları saklıdır.</div>
+    <div class="footer-copy">
+        © 2026 Tuna Butik Otel. Tüm hakları saklıdır.<br>
+        <span style="font-size:11px;opacity:0.5;margin-top:4px;display:inline-block">
+          Tasarım &amp; Geliştirme: 
+          <a href="mailto:selcukburgaz@gmail.com" style="color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--turq-lt)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">
+            Burgaz Reklam Ajansı
+          </a>
+        </span>
+      </div>
     <div class="footer-legal">
       <a href="gizlilik.html">Gizlilik Politikası</a>
       <a href="sartlar.html">Kullanım Şartları</a>
@@ -2193,110 +2229,6 @@ function handleBooking() {
   window.addEventListener('resize', () => { goTo(0); }, {passive:true});
   goTo(0);
   startAuto();
-})();
-</script>
-
-<!-- ══════════════════════════════════════
-     TUNA CHATBOT WIDGET
-══════════════════════════════════════ -->
-<style>
-#tuna-chat-toggle{position:fixed;bottom:28px;left:28px;z-index:9998;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0B4F7A,#0D6B5E);color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(11,79,122,0.35);transition:transform 0.25s cubic-bezier(0.16,1,0.3,1),box-shadow 0.25s;-webkit-tap-highlight-color:transparent;}
-#tuna-chat-toggle:hover{transform:scale(1.1);box-shadow:0 8px 28px rgba(11,79,122,0.4);}
-#tuna-chat-toggle .chat-icon{transition:opacity 0.2s,transform 0.2s;}
-#tuna-chat-toggle .close-icon{position:absolute;opacity:0;transform:rotate(-90deg);transition:opacity 0.2s,transform 0.2s;}
-#tuna-chat-toggle.open .chat-icon{opacity:0;transform:rotate(90deg);}
-#tuna-chat-toggle.open .close-icon{opacity:1;transform:rotate(0);}
-#tuna-chat-toggle .chat-dot{position:absolute;top:10px;right:10px;width:10px;height:10px;border-radius:50%;background:#1DBFA8;border:2px solid white;animation:dot-pulse 2s ease-in-out infinite;}
-@keyframes dot-pulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.3);opacity:0.7;}}
-#tuna-chat-toggle.open .chat-dot{display:none;}
-#tuna-chatbox{position:fixed;bottom:96px;left:28px;z-index:9999;width:360px;height:520px;background:white;border-radius:18px;box-shadow:0 20px 60px rgba(11,30,55,0.18),0 4px 16px rgba(11,30,55,0.08);display:flex;flex-direction:column;transform:scale(0.85) translateY(24px);transform-origin:bottom left;opacity:0;pointer-events:none;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),opacity 0.3s;overflow:hidden;}
-#tuna-chatbox.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}
-.cb-header{background:linear-gradient(135deg,#0B4F7A 0%,#0D6B5E 100%);padding:16px 18px;display:flex;align-items:center;gap:12px;flex-shrink:0;}
-.cb-avatar{width:38px;height:38px;border-radius:50%;background:rgba(29,191,168,0.25);border:2px solid rgba(29,191,168,0.5);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:300;color:white;flex-shrink:0;}
-.cb-header-info{flex:1;}
-.cb-name{font-size:14px;font-weight:500;color:white;line-height:1;margin-bottom:3px;}
-.cb-status{display:flex;align-items:center;gap:5px;font-size:11px;color:rgba(255,255,255,0.65);}
-.cb-online-dot{width:6px;height:6px;border-radius:50%;background:#1DBFA8;animation:dot-pulse 2s ease-in-out infinite;}
-.cb-lang-switch{display:flex;background:rgba(255,255,255,0.1);border-radius:16px;padding:2px;}
-.cb-lang-btn{font-size:10px;font-weight:500;letter-spacing:0.08em;color:rgba(255,255,255,0.6);padding:3px 9px;border-radius:14px;cursor:pointer;transition:all 0.2s;border:none;background:none;}
-.cb-lang-btn.active{background:rgba(29,191,168,0.35);color:white;}
-.cb-messages{flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#E8DECE transparent;}
-.cb-messages::-webkit-scrollbar{width:4px;}.cb-messages::-webkit-scrollbar-thumb{background:#E8DECE;border-radius:4px;}
-.cb-msg{max-width:85%;animation:msg-in 0.3s cubic-bezier(0.16,1,0.3,1) both;}
-@keyframes msg-in{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
-.cb-msg.bot{align-self:flex-start;}.cb-msg.user{align-self:flex-end;}
-.cb-bubble{padding:10px 14px;border-radius:16px;font-size:13.5px;line-height:1.55;}
-.cb-msg.bot .cb-bubble{background:#F5EFE6;color:#0D2233;border-radius:4px 16px 16px 16px;}
-.cb-msg.user .cb-bubble{background:linear-gradient(135deg,#0B4F7A,#1470A8);color:white;border-radius:16px 4px 16px 16px;}
-.cb-bubble a{color:#1DBFA8;text-decoration:underline;}
-.cb-msg.user .cb-bubble a{color:#5ED9C8;}
-.cb-typing{align-self:flex-start;display:none;gap:4px;align-items:center;padding:10px 14px;background:#F5EFE6;border-radius:4px 16px 16px 16px;}
-.cb-typing.show{display:flex;}
-.cb-typing span{width:6px;height:6px;border-radius:50%;background:#5A7A92;animation:typing-bounce 1.2s ease-in-out infinite;}
-.cb-typing span:nth-child(2){animation-delay:0.2s;}.cb-typing span:nth-child(3){animation-delay:0.4s;}
-@keyframes typing-bounce{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-5px);}}
-.cb-quick-replies{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 8px;flex-shrink:0;}
-.cb-quick-btn{font-size:12px;color:#0B4F7A;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:16px;padding:6px 12px;cursor:pointer;transition:background 0.15s,transform 0.1s;-webkit-tap-highlight-color:transparent;white-space:nowrap;}
-.cb-quick-btn:hover{background:#DBEAFE;transform:translateY(-1px);}
-.cb-input-wrap{border-top:1px solid #F5EFE6;padding:10px 12px;display:flex;align-items:flex-end;gap:8px;flex-shrink:0;}
-.cb-input{flex:1;border:1.5px solid #E8DECE;border-radius:20px;padding:9px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:13px;color:#0D2233;background:#FDFAF6;outline:none;resize:none;max-height:80px;line-height:1.4;transition:border-color 0.2s;}
-.cb-input:focus{border-color:#1DBFA8;background:white;}
-.cb-input::placeholder{color:#5A7A92;}
-.cb-send{width:36px;height:36px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,#1DBFA8,#19AA97);color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.15s,box-shadow 0.15s;box-shadow:0 2px 8px rgba(29,191,168,0.3);}
-.cb-send:hover{transform:scale(1.1);box-shadow:0 4px 14px rgba(29,191,168,0.4);}
-.cb-send:disabled{opacity:0.4;cursor:not-allowed;transform:none;}
-@media(max-width:600px){#tuna-chatbox{left:12px;right:12px;bottom:86px;width:auto;height:70vh;max-height:480px;}#tuna-chat-toggle{bottom:20px;left:16px;width:50px;height:50px;}}
-</style>
-
-<button id="tuna-chat-toggle" onclick="toggleChat()" aria-label="Chatbot aç">
-  <span class="chat-dot"></span>
-  <svg class="chat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-  <svg class="close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-</button>
-
-<div id="tuna-chatbox">
-  <div class="cb-header">
-    <div class="cb-avatar">T</div>
-    <div class="cb-header-info">
-      <div class="cb-name">Tuna Asistan</div>
-      <div class="cb-status"><span class="cb-online-dot"></span><span id="cb-status-text">Şu an aktif</span></div>
-    </div>
-    <div class="cb-lang-switch">
-      <button class="cb-lang-btn active" id="lang-tr" onclick="setLang('tr')">TR</button>
-      <button class="cb-lang-btn" id="lang-en" onclick="setLang('en')">EN</button>
-    </div>
-  </div>
-  <div class="cb-messages" id="cbMessages"></div>
-  <div class="cb-typing" id="cbTyping"><span></span><span></span><span></span></div>
-  <div class="cb-quick-replies" id="cbQuickReplies"></div>
-  <div class="cb-input-wrap">
-    <textarea class="cb-input" id="cbInput" placeholder="Mesajınızı yazın..." rows="1" onkeydown="handleChatKey(event)" oninput="autoResize(this)"></textarea>
-    <button class="cb-send" id="cbSend" onclick="sendMessage()" aria-label="Gönder">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-    </button>
-  </div>
-</div>
-
-<script>
-(function(){
-var SYSTEM_PROMPT="Sen Tuna Butik Otel'in yapay zeka asistanısın. Adın 'Tuna Asistan'. Bodrum'daki bu 18 odalı butik otele ait tüm bilgileri biliyorsun.\n\nOTEL BİLGİLERİ:\n- Adres: Çarşı Mahallesi, Üçkuyular Caddesi No:23, 48400 Bodrum/Muğla\n- Telefon/WhatsApp: +90 532 604 26 07\n- E-posta: info@tunaotel.com\n- Bodrum Kalesi'ne 750 m | Çarşıya 500 m | Marinaya 1.5 km | Havalimanına 36 km\n\nODA TİPLERİ (18 oda toplam):\n- Double Oda (8): 2 kişilik, çift yatak, ~22m²\n- Twin Oda (6): 2 kişilik, 2 ayrı yatak, ~22m²\n- Triple Oda (4): 3 kişilik, ~26m²\nTümünde: Klima, TV, Wi-Fi, Özel Banyo, Çalışma Masası\n\nHİZMETLER:\n- Açık büfe kahvaltı: 08:00-10:30, fiyata dahil\n- Ücretsiz Wi-Fi | Check-in 14:00 | Check-out 12:00 | 7/24 Resepsiyon\n\nREZERVASYON:\n- Rezervasyon formu: tunaotel.com/rezervasyon/\n- WhatsApp: +90 532 604 26 07\n- 48 saat öncesine kadar ücretsiz iptal\n\nKURALLAR:\n1. Kullanıcı Türkçe yazarsa MUTLAKA Türkçe yanıt ver. İngilizce yazarsa İngilizce yanıt ver.\n2. Kısa ve net yanıtlar (max 3-4 cümle)\n3. Fiyat sorusunda: 'Güncel fiyatlar için WhatsApp'tan ulaşın veya rezervasyon formumuzu doldurun' de\n4. Rezervasyon isteyenleri tunaotel.com/rezervasyon/ veya WhatsApp'a yönlendir\n5. Samimi ve sıcak ol";
-var chatLang="tr",chatHistory=[],isTyping=false,chatOpened=false;
-var QR={tr:["Oda fiyatları","Rezervasyon nasıl?","Kaleye ne kadar?","Kahvaltı dahil mi?","Check-in saati"],en:["Room prices","How to book?","Distance to castle?","Breakfast included?","Check-in time"]};
-var WELCOME={tr:"Merhaba! Ben Tuna Butik Otel'in asistanıyım. Size nasıl yardımcı olabilirim? 😊",en:"Hello! I'm the Tuna Boutique Hotel assistant. How can I help you? 😊"};
-window.toggleChat=function(){var box=document.getElementById("tuna-chatbox"),btn=document.getElementById("tuna-chat-toggle"),open=box.classList.contains("open");if(!open){box.classList.add("open");btn.classList.add("open");if(!chatOpened){chatOpened=true;setTimeout(function(){addMsg("bot",WELCOME[chatLang]);},350);setTimeout(showQR,700);}document.getElementById("cbInput").focus();}else{box.classList.remove("open");btn.classList.remove("open");}};
-window.setLang=function(l){chatLang=l;document.getElementById("lang-tr").classList.toggle("active",l==="tr");document.getElementById("lang-en").classList.toggle("active",l==="en");document.getElementById("cb-status-text").textContent=l==="tr"?"Şu an aktif":"Online now";document.getElementById("cbInput").placeholder=l==="tr"?"Mesajınızı yazın...":"Type your message...";showQR();};
-function addMsg(role,text){var c=document.getElementById("cbMessages"),d=document.createElement("div");d.className="cb-msg "+role;var b=document.createElement("div");b.className="cb-bubble";b.innerHTML=text.replace(/
-/g,"<br>").replace(/(https?:\/\/[^\s<]+)/g,"<a href="$1" target="_blank" rel="noopener">$1</a>");d.appendChild(b);c.appendChild(d);c.scrollTop=c.scrollHeight;}
-function showQR(){var w=document.getElementById("cbQuickReplies");w.innerHTML="";QR[chatLang].forEach(function(q){var btn=document.createElement("button");btn.className="cb-quick-btn";btn.textContent=q;btn.onclick=function(){sendText(q);w.innerHTML="";};w.appendChild(btn);});}
-window.sendMessage=function(){var inp=document.getElementById("cbInput"),t=inp.value.trim();if(!t||isTyping)return;sendText(t);inp.value="";inp.style.height="auto";};
-function sendText(text){if(isTyping)return;document.getElementById("cbQuickReplies").innerHTML="";addMsg("user",text);chatHistory.push({role:"user",content:text});isTyping=true;document.getElementById("cbSend").disabled=true;document.getElementById("cbTyping").classList.add("show");document.getElementById("cbMessages").scrollTop=99999;
-fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:512,system:SYSTEM_PROMPT,messages:chatHistory.slice(-10)})})
-.then(function(r){return r.json();})
-.then(function(d){var reply=d.content&&d.content[0]&&d.content[0].text?d.content[0].text:(chatLang==="tr"?"Üzgünüm, şu an yanıt veremiyorum. WhatsApp: +90 532 604 26 07":"Sorry, please contact us on WhatsApp: +90 532 604 26 07");chatHistory.push({role:"assistant",content:reply});document.getElementById("cbTyping").classList.remove("show");isTyping=false;document.getElementById("cbSend").disabled=false;addMsg("bot",reply);if(chatHistory.length%6===0)showQR();})
-.catch(function(){document.getElementById("cbTyping").classList.remove("show");isTyping=false;document.getElementById("cbSend").disabled=false;var e=chatLang==="tr"?"Bağlantı hatası. <a href=\"https://api.whatsapp.com/send?phone=905326042607\" target=\"_blank\">WhatsApp'tan ulaşın</a>.":"Connection error. <a href=\"https://api.whatsapp.com/send?phone=905326042607\" target=\"_blank\">Contact via WhatsApp</a>.";addMsg("bot",e);});
-}
-window.handleChatKey=function(e){if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();window.sendMessage();}};
-window.autoResize=function(el){el.style.height="auto";el.style.height=Math.min(el.scrollHeight,80)+"px";};
 })();
 </script>
 
