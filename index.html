@@ -383,14 +383,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 /* ── Saf gradient arka plan — görsel yok ── */
 .hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(
-    175deg,
-    #1B7EC0 0%,
-    #0F5E9C 30%,
-    #0A4A78 55%,
-    #0B5570 70%,
-    #0D6B5E 100%
-  );
+  background:
+    linear-gradient(175deg, rgba(11,79,122,0.55) 0%, rgba(13,107,94,0.45) 100%),
+    url('/images/Edit-160.jpg') center center / cover no-repeat;
 }
 .hero-bg::before, .hero-bg::after { display: none; }
 
@@ -2334,7 +2329,3 @@ fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-T
 window.handleChatKey=function(e){if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();window.sendMessage();}};
 window.autoResize=function(el){el.style.height="auto";el.style.height=Math.min(el.scrollHeight,80)+"px";};
 })();
-</script>
-
-</body>
-</html>
